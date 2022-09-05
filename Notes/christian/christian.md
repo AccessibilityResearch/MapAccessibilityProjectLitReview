@@ -1,4 +1,18 @@
+---
+title: "Christian's Notes and References"
+output: pdf_document
+bibliography: christian.bib
+---
+
+# Table of Contents
+
+[TOC]
+
 # Accessible Maps for the Blind: Comparing 3D Printed Models with Tactile Graphics
+
+## Citation
+
+[@10.1145/3173574.3173772]
 
 ## Brief Summary
 
@@ -15,3 +29,5 @@ Several studies were done on the effectiveness of Orientation and Mobility (O&M)
     > | neighborhood |        5        |  2   |    9     |
     > |     park     |        3        |  0   |    13    |
     > |   station    |        4        |  1   |    11    |
+
+# References
