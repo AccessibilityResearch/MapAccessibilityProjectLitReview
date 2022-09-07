@@ -117,7 +117,7 @@ The authors came to several conclusions:
 
 Several studies were done on the effectiveness of Orientation and Mobility (O&M) training for people with blindness and severe vision impairment using 3D models. These studies seem to suggest that 3D models are preferred and more effective than the tactile equivalents for 2D graphics. 3D models can also be enhanced using interactive audio labels.
 
-## MAIN STUDY: COMPARING TACTILE MAPS & 3D PRINTS
+## Main Study: Comparing Tactile Maps & 3D Prints
 
 -   3D models were preferred
 
