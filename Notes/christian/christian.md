@@ -16,6 +16,33 @@ bibliography: christian.bib
 
 [@COBO2017294]
 
+## Background
+
+According to the authors,
+
+> There have been three traditional hypothesis about whether blind people can understand and manipulate spatial concepts.
+
+1. Deficiency
+    - Argues that blind people are unable to develop spatial thought
+1. Inefficiency
+    - Blind people _can_ understand spatial thought, but cannot understand to the same level as someone who is not blind
+1. Difference
+    - Blind people are just as capable of spatial thought
+
+Many studies have been done, and a significant portion seem to support the Difference hypothesis.
+
+## Study
+
+The authors developed an Android app using Unity3D. This app allowed participants to "explore" and/or "look" around a room containing furniture, objects, etc, by using the touchscreen and the gyroscope.
+
+The authors wanted to specifically test "distant-exploration" and its effectiveness:
+
+> We propose a distant-exploration approach where blind people can explore the room by controlling the direction of the avatar's line of sight. Feedback regarding obstacles beyond the reach of the cane may be obtained with no need of making the avatar to walk along the virtual space.
+
+## Results
+
+The authors found a significant difference in understanding and required exploration time when using the "distant-exploration" approach. The sample size was limited though, and more research is needed to come to a sound conclusion and methodology.
+
 \newpage
 
 # Image Accessibility for Screen Reader Users: A Systematic Review and a Road Map
@@ -88,7 +115,7 @@ Several studies were done on the effectiveness of Orientation and Mobility (O&M)
 
 -   3D models were preferred
 
-    > Preferred format by map type, as revealed through use (neighbourhood map) or self-reporting (park maps and station plans)
+    > Preferred format by map type, as revealed through use (neighborhood map) or self-reporting (park maps and station plans)
     >
     > |     map      | tactile graphic | both | 3D model |
     > | :----------: | :-------------: | :--: | :------: |
