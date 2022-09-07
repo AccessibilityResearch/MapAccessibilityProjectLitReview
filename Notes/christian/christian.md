@@ -43,6 +43,12 @@ The authors wanted to specifically test "distant-exploration" and its effectiven
 
 The authors found a significant difference in understanding and required exploration time when using the "distant-exploration" approach. The sample size was limited though, and more research is needed to come to a sound conclusion and methodology.
 
+## Questions
+
+1. What were the feedback forms used?
+
+## Lessons Learned
+
 \newpage
 
 # Image Accessibility for Screen Reader Users: A Systematic Review and a Road Map
