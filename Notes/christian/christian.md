@@ -4,7 +4,7 @@ output: pdf_document
 bibliography: christian.bib
 ---
 
-# Table of Contents
+# Table of Contents {ignore=true}
 
 [TOC]
 
@@ -16,7 +16,7 @@ bibliography: christian.bib
 
 [@COBO2017294]
 
-## Background
+## Introduction
 
 According to the authors,
 
@@ -39,15 +39,15 @@ The authors wanted to specifically test "distant-exploration" and its effectiven
 
 > We propose a distant-exploration approach where blind people can explore the room by controlling the direction of the avatar's line of sight. Feedback regarding obstacles beyond the reach of the cane may be obtained with no need of making the avatar to walk along the virtual space.
 
-## Results
+## Conclusion
 
 The authors found a significant difference in understanding and required exploration time when using the "distant-exploration" approach. The sample size was limited though, and more research is needed to come to a sound conclusion and methodology.
 
-## Questions
+## Lessons Learned
+
+## Further Questions
 
 1. What were the feedback forms used?
-
-## Lessons Learned
 
 \newpage
 
@@ -57,7 +57,7 @@ The authors found a significant difference in understanding and required explora
 
 [@electronics10080953]
 
-## Overview
+## Introduction
 
 @electronics10080953 reviewed 33 papers (using [PRISMA](https://prisma-statement.org) guidelines) with two goals in mind:
 
@@ -70,7 +70,7 @@ They discovered several things:
 -   Very little research has been done on the automation of image-related information
 -   Input from target users is _very_ important when designing new accessibility solutions
 
-## Research Questions
+## Study
 
 _Note: BLV = Blind/Low Vision_
 
@@ -86,8 +86,6 @@ The authors had five questions for their review:
 >
 > RQ5. How have BLV people been involved in the design and evaluation process?
 
-## Types of Images Studied
-
 Most of the reviewed papers focused on specific types of images. Here were the main three:
 
 | Specific Image Type | Number of Papers |
@@ -96,7 +94,7 @@ Most of the reviewed papers focused on specific types of images. Here were the m
 |       Graphs        |        6         |
 |  Geometric Shapes   |        4         |
 
-## Conclusions
+## Conclusion
 
 The authors came to several conclusions:
 
@@ -104,6 +102,10 @@ The authors came to several conclusions:
 1. Only about 1/3 of the papers provide multi-modal feedback
 1. The lack of an automated way to retrieve image-related information is currently an important barrier in making large-scale solutions
 1. Studies should get BLV individuals involved early in the process, as their feedback is very important when making design decisions
+
+## Lessons Learned
+
+## Further Questions
 
 \newpage
 
