@@ -187,6 +187,43 @@ for more broad criteria.
 \newpage
 
 
+# CapMaps - Capacitive Sensing 3D Printed Audio-Tactile Maps:
+## Citation
+
+[@10.1007/978-3-319-41267-2_20]
+
+## Introduction
+This paper presents us with ways to link audio with tactile maps in order to reduce 
+the tactile complexity of the map. the major challenge of audio-tactile maps is 
+linking the audio to the map in a presentable way. The way this is achieved in
+this paper is by using conductive filement inside the 3D printed tactile map.
+This conductive filement will transmit the touch from the map and produce audio
+output from a mobile device. To demonstrate the effectiveness of this approach
+they performed a study.
+
+
+## Study
+In order to actually produce the audio-tactile maps a duel headed 3D printer
+was used, one head printed in standard PLA while the other head printed a
+special conductive filement called Trijexx Conductive.
+
+
+
+
+
+## Conclusion
+
+
+
+## Lessons Learned
+
+1. 
+
+
+## Questions
+
+\newpage
+
 \newpage
 
 # References
