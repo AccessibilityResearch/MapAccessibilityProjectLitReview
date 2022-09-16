@@ -205,25 +205,197 @@ they performed a study.
 ## Study
 In order to actually produce the audio-tactile maps a duel headed 3D printer
 was used, one head printed in standard PLA while the other head printed a
-special conductive filement called Trijexx Conductive.
+special conductive filement called Trijexx Conductive. On one side of the map there is a conductive flat portion. A touch of the user on the one side of the 3D
+printed capacitive code is forked into multiple locations on the display’s surface, inducing the detection of multiple concurrent touches. Software analyzes concurrent touches and classifies them into normal touches and specific codes. Thus, the 3D printed tactile map is able to transmit information to the surface by a single touch. This also provides I nice landmark for users to determine the orientation of the map.
 
-
+Next they performed a feasibility study that essentially tested whether or not the flat conductive material on the side worked well enough to transmit the scale of the map, GPS coordinates, distances, and orientation of the map to the real world. During the tests the users where able to obtain all of this information about the map features via double tap(name of feature), triple tap (type of feature), and a long tap(names of surrounding features).
 
 
 
 ## Conclusion
+In conclusion this paper focused mostly on attaching audio descriptions to tactile 3D printed maps and discovered how interactive content should be structured to support navigation and orientation.
+
+
+## Lessons Learned
+
+1. 3D printed audio-tactile maps are feasible but have limited capabilities.
+2. 3D printing a map that combines PLA and conductive material is time consuming yet effective for areas that aren't subject to change.
+
+
+
+## Questions
+Is there a way to automate designing the 3D maps with CAD (designing the maps seemed like the most time consuming part)?
+\newpage
+
+\newpage
+
+
+
+# Accessible smartphones for blind users: A case study for a wayfinding system:
+## Citation
+
+[@RODRIGUEZSANCHEZ20147210]
+
+## Introduction
+This paper starts of by introducing the problems with current smartphone accessibility and provides solid background on each issue: screen readers, each app having different layout, current accessible maps not being scale-able, storing audio locally vs web based that would require a connection, and provides and interesting statistic that 82% of blind people are aged 50
+or over (Zajicek & Brewster, 2004) therefore smartphones are harder to make accessible since most people that age aren't attuned to using them in the first place. They also state that the age of going blind is a factor that should be considered. 
+
+
+## Study
+Before setting up the end-user testing they begin by developing an accessible navigation app that has a menu(current location, help, destination address, and information) based off of the smartphones landmarks(each corner). This app provides multi-model feedback, audio and tactile. To begin thier end-user testing they have 18 participants (9 partially blind, 9 fully blind) navigate from a building to a subway across 430meters while using the app. The feedback about the proper direction is constantly provided and the phone vibrates when the direction is the correct. These participants that are partially blind performed better both using just audio feedback and using multi-model. The fully blind participants actually halved thier travel time switching from audio only to multi-model. The app made use of a waypoint system, these participants would not simply go straight to the destination but instead follow waypoints sequentially. Something of note is that the authors supposed an idea that the users could comment on waypoints so that when another person takes the route they can hear the comment and hopefully be provided with helpfull info.
+At the end of this study the participants where asked a series of questions:
+> Q1) After the training, do you think the wayfinding application
+software is easy to use for blind users?
+> Q2) Is it easy to choose a specific destination?
+> Q3) Is it useful that the wayfinding application contains physical
+references on the route?
+> Q4) Is there enough auditory feedback?
+> Q5) When the auditory and tactile feedbacks are activated, is the
+navigation better than when you are using only audio?
+
+## Conclusion
+>Multi-model is proven time and again that it is the ideal feedback medium (audio-tactile).
+
+>From the authors results it is shown that partially blind participants perform better in all test cases.
+
+>Questionaire results are shown in Table 1. shown that most features of the app are effective.
+
+>All participants preferred the fixed regions.
+
+>Constant feedback was preffered.
+
+>A waypoint system is effective.
+
+in the reverse path, the average time decreased down to 10 min for blind people
+and 8 min for limited vision users. Furthermore, when users were
+using the second mode (audio, touch screen and tactile feedback)
+in the second trial, the time spent also decreased: 14 min for blind
+people and 12 min for limited vision users when they are walking
+from the building to the subway and the reverse path was the half
+the time for both types of users. This fact is due to the users
+learning both the path to follow and how to interact with the
+wayfinding application of the smartphone. 
+
+__We can conclude that the wayfinding application is well designed and
+it is usable and accessible for visually impaired people__
+
+## Lessons Learned
+
+1. Constant feedback is preffered
+2. A comment system may be effective?
+3. Fixed regions for application design is preffered.
+4. Multi-model strikes again.(very effective and preffered)
+
+
+
+## Questions
+> 1. Is this app still availible today?
+> 2. How scalable is the GUI using device landmarks?
+> 3. Which type of constant feedback is preffered(audio or tactile)?
+
+
+\newpage
+
+
+# Usability Evaluation of a Web System for Spatially Oriented Audio Descriptions of Images Addressed to Visually Impaired People:
+## Citation
+
+[@10.1007/978-3-319-07440-5_15]
+
+## Introduction
+This paper starts by introducing the fact that 285 Million people are visually impaired and of those 39 Million are blind (worldwide). Next they present the fact that screen reader software is getting more advanced yet still generally lacks the ability to "read" digital images because it often lacks alternate text(html coding thing). This paper will present a software to address this issue as well as user backed testing. The user backed testing with verify the usefullness and the validity of the implemented solution. 
+
+There are two main problems that are being addressed, firstly, alternative text is rarely properly placed/written. Secondly, the alternate text that is provided is insufficient.
+
+It is difficult to write an image description that can cover various types of information that a visually impaired user could ever possibly need to understand.
+
+The text description is insufficient to make users understand clearly the spatial arrangement of elements in the image.
+
+The authors propose a solution to the spatial arrangement problem via tactile feedback. A basic solution is to create a tactile screen/display with pins or sensitive polymer membranes capable of forming complex outlines and shapes.
+
+Expensive devices can remedy these issue's to a degree but cost in the thousands.
+Instead the authors propose that a simple and cheap but no less effective solution is through multi-modal web based applications.
+
+## Study
+They developed a software prototype of a web technology called AudioImagem through which a sighted person is able to delimit areas within an image and associate audio descriptions to them. There are two forms of use in the app and these are: static mode and navigation mode. Static mode doesn't depend on cursor position(can place cursor anywhere and won't affect outcome). Their are two ways to get audio descriptions in static mode: short response and long response. Simply put they are short and long descriptions of the image. These descriptions rely on programmers/users to type out both descriptions for the images.
+
+The next mode navigation mode is where a user can guide the cursor around the image and obtian descriptions based off of position on the image. Again, these descriptions rely on a real human to type them out.
+
+In navigation mode if the cursor leaves the image the app will have an audio queue for which side the cursor left out of. 
+
+The authors added a end-user test to determine the usefullness. 5 participants where monitored through cameras, keylisteners, screen recorder, and microphone, and tasked with a list of 12 tasks. 
+
+__For Example:__
+Task 2:
+> Short description: “Photo of an autumn landscape”. (C key)
+> Long description: “This is a photo of a bleak autumn day landscape. There is a street crossing the photo on the left and a leafy tree with orange leaves on the right side”. (L key)
+> Task: “Observe the photo and describe as you understand it” (T key)
+
+__Task List:__
+>tasks 1 and 2 displayed landscape photos
+
+>task 3 a drawing of the world globe
+
+>task 4 a geographical map of Brazil
+
+>task 5 an ecosystem flowchart
+
+>task 6 a trigonometric table
+
+>task 7 an algorithm flowchart
+
+>task 8 a drawing of the kinds of cow meat
+
+>task 9 a phase graph diagram of chemical substance
+
+>task 10 a plan drawing of chessboard with all pieces
+
+>task 11 a diagram of Daniel chemical cell
+
+>task 12 a figure of the periodic chemical table
+
+Each task was designed to take 5-10 minutes.
+
+
+## Conclusion
+In conclusion:
+On average the 5 users spent 2 hours and 20 minutes to complete all tasks.
+This meant it took 11.5 minutes on average per task.
+
+
+| Users | Kind of disability| Screen reader experience | Tasks concluded |Tasks part. concluded | Tasks not concluded|Time test (hour)| Tablet (Pen or Finger)
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |----------- |
+| P1 | Low Vision |Yes  |11|0|1|1:59|Finger |
+| P2 | Blind      | Yes |5 |1|4|1:58|F and P|
+| P3 | Blind      | Yes |4 |4|2|2:43|F and P|
+| P4 | Low Vision | Yes |9 |0|2|2:21|Pen    |
+| P5 | Low Vision | No  |5 |0|7|2:49|Pen    |
+
 
 
 
 ## Lessons Learned
 
-1. 
+1. Screen reader experience matters when developing something like this.
+2. 
+
 
 
 ## Questions
+> 1. Can the use of AI speed up or improve this design?
+
+
 
 \newpage
 
+
+
+
+
+
+
+
 \newpage
+
 
 # References
