@@ -390,6 +390,145 @@ This meant it took 11.5 minutes on average per task.
 
 
 
+# Evaluating Fitts’ law on vibrating touch-screen to improve visual data accessibility for blind users:
+## Citation
+
+[@LAHIB201816]
+
+## Introduction
+The goal of this paper is to evaluate whether or not Fitts' Law can be applied to a vibrating touch screen in the context of blind users. In this case the blind users where either fully blind, blindfolded, or sighted.
+
+To evaluate Fitts' Law the authors produced thier own app that would be used to record the data and calculate Fitts' Law along with relevant data points. This app was made to study the ability of blind users to tap specific shapes on a touch-screen while varying different parameters: mainly(target distance/size, and angle of attack). 
+
+
+
+This paper's highlights:
+
+> Reviews the literature on Fitts’ Law and visual data accessibility solutions for blind users.
+
+> Studies the ability of blind users to point to shapes(circles) on a vibrating touch-screen (VTS).
+
+> Varies different pointing task parameters: target distance, target size, and angle of attack.
+
+> Fitts’ Law can be applied for blind users using a VTS when varying target distance and target size.
+
+> Fitts’ Law is not verified for blind users using a VTS when varying the angle of attack.
+
+Aside from everything stated above, this experiment was conducted NON-multi-modally.
+
+## Study
+As the expirement protocol three pointing task experiments where performed in which 1 parameter changed per experiments.
+
+> 1. Distance variation from target
+> 2. Size variation of target
+> 3. Angle of approach variation
+
+Every experiment first contained a "Mapping/Learning" phase where the user would point(__not touch/tap__) to both points with the help of a test overseer. 
+
+Firstly each user would be told, the experiments to be conducted, the nature of each experiment, the tasks to be completed, as well as how to handle the vibrating touch-screen, environment (e.g., how targets are presented on the vibrating screen, control buttons, etc.). In addition, test subject profile data (e.g., name, age, gender, type of blindness: since birth or after birth, etc.) is recorded at this stage. After this stage the users would enter the actual testing phase where they were tasked with touching given points on the screen.
+
+
+__Experiment 1:__
+The goal of this experiment is to prove the following hypothesis: A pointing task performed by a blind user on a vibrating touch-screen is affected by the distance between the source and the target points following Fitts’ Law.
+
+The distance being varied was ranged between 120, 200, and 240 pixels on a 1280x800 screen with a density of 149 pixels per inch and a 10.1 inch screen size.
+
+The size of the target is fixed and the angle is fixed at 180 degrees(horizontal).
+
+__Experiment 2:__
+The goal of this experiment is to prove the following hypothesis: A pointing task performed by a blind user on a vibrating touch-screen is affected by the size of the source and the target points following Fitts’ Law.
+
+The target size being varied ranged between 40, 60, 80, and 90 pixels using the same screen configuration as above. 
+
+Because the targets are circles the size refers to the diameter of the circle.
+
+The distance is fixed and the angle is fixed to 180 degrees(horizontal).
+
+
+__Experiment 3:__
+The goal of this experiment is to prove the following hypothesis: A pointing task performed by a blind user on a vibrating touch-screen is not affected by the angle between the source and the target points, following Fitts’ Law.
+
+The angle being varied ranged between 0, 30, 60, 90, 120, and 150 degrees.
+
+The distance is fixed to 120 pixels and the target size is fixed to 40 pixels.
+
+__Users/Testers:__
+Twenty-nine testers,  aged between 21 and 30 years old, participated in the experimental evaluation:
+> i) six Blind Since Birth (i.e., BSB)(1 female and 5 male)
+> ii) seven Blind After Birth (i.e., BAB)(5 females and 2 males)
+> iii) sixteen Sighted (8 females and 8 males).
+
+ The authors asked half of the sighted testers (4 females and 4 males) to conduct the experiments Blindfolded (i.e. BF), whereas the other half conducted the experiments sighted  (so that  we could  compare and contrast results)
+
+All  in all,  each  tester  performed: 4  (runs of  Experiment 1)  x 3 (distance variations) x 25 (pointing trials) + 3 (runs of Experiment 2) x 4 (size variations) x 25 (pointing trials) = 600 pointing trials.  
+
+
+## Conclusion
+
+>- Results of Experiments 1 and 2 show that MT (movement time) and Err (tapping error percentage) for all groups of users tend  to  concur  with  Fitts’  Law,  where  both  average  MT and  Err  increase with  increasing  target distance  (1)  and decreasing target size (2). In other words, both hypotheses of Experiments 1 and 2 have been verified.
+
+>- Results of Experiments 1  and 2  also show  that BAB testers produce  the highest  MT and  Err levels,  followed by  BF testers and then BSB testers.
+
+>- Results of Experiment 3 show that MT only marginally varies with varying angles of the target, which concurs with Fitt’s Law: given that angle variation is not a parameter in Fitt’s mathematical model.
+
+>- Yet, results of Experiment 3 show that average Err levels are seriously affected by changes in the angle of the target, where Err is highest with steep angles (e.g., 120° and 60°), and lowest with close to flat (e.g., 0°) angles. Err is highest with BAB testers, followed  by  BF  and then BSB.  Given  the  latter, we can state  that  Experiment  3’s  hypothesis  is not verified: A pointing task performed by a blind user on a vibrating touch-screen seems to be affected by the angle between the source and target points. 
+
+
+
+## Lessons Learned
+
+1. Fitts' Law can be applied to touchscreens with blind users when the distance and target size are being considered but not when angle is being considered.
+2. a single medium of feedback is still affective in this context. (varying distance and size).
+3. 
+
+
+## Questions
+> 1. I wonder if the reason for the varying angles producing more error is because of the practice the had from the previous 2 experiments.
+> 2. Will the use of multi-modal feedback be able to be evaluated by Fitts' Law and if so, will it improve the MT and decrease error rate?
+> 3. Will using a plethera of vibration motors in the device improve performance?
+
+
+\newpage
+
+
+# The Reliability of Fitts’s Law as a Movement Model for People with and without Limited Fine Motor Function:
+## Citation
+
+[@10.1145/3373625.3416999]
+
+## Introduction
+The goal of this paper is determine how affective Fitts' Law is on subjects with limited fine motor skills.
+
+
+
+## Study
+
+
+
+## Conclusion
+
+
+
+
+## Lessons Learned
+
+1. 
+
+
+## Questions
+> 1. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
