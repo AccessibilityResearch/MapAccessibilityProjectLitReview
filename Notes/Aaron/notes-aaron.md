@@ -10,6 +10,7 @@ bibliography: aaron.bib
 
 \newpage
 
+
 # Visual Impairments and Mobile Touchscreen Interaction: State-Of-The-Art, Causes of Visual Impairment, and Design Guidelines
 
 ## Citation
@@ -51,9 +52,8 @@ The guideline summation is as stated:
 
 ## Lessons Learned
 
-
-
 \newpage
+
 
 # Facilitating Route Learning Using Interactive Audio-Tactile Maps for Blind and Visually Impaired People
 ## Citation
@@ -96,6 +96,7 @@ From their results stated in the paper:
 ## Questions
 
 \newpage
+
 
 # Investigating Accessibility on Web-based Maps:
 ## Citation
@@ -225,10 +226,8 @@ In conclusion this paper focused mostly on attaching audio descriptions to tacti
 
 ## Questions
 Is there a way to automate designing the 3D maps with CAD (designing the maps seemed like the most time consuming part)?
-\newpage
 
 \newpage
-
 
 
 # Accessible smartphones for blind users: A case study for a wayfinding system:
@@ -292,7 +291,6 @@ it is usable and accessible for visually impaired people__
 > 1. Is this app still availible today?
 > 2. How scalable is the GUI using device landmarks?
 > 3. Which type of constant feedback is preffered(audio or tactile)?
-
 
 \newpage
 
@@ -384,10 +382,7 @@ This meant it took 11.5 minutes on average per task.
 ## Questions
 > 1. Can the use of AI speed up or improve this design?
 
-
-
 \newpage
-
 
 
 # Evaluating Fitts’ law on vibrating touch-screen to improve visual data accessibility for blind users:
@@ -487,7 +482,6 @@ All  in all,  each  tester  performed: 4  (runs of  Experiment 1)  x 3 (distance
 > 2. Will the use of multi-modal feedback be able to be evaluated by Fitts' Law and if so, will it improve the MT and decrease error rate?
 > 3. Will using a plethera of vibration motors in the device improve performance?
 
-
 \newpage
 
 
@@ -497,26 +491,34 @@ All  in all,  each  tester  performed: 4  (runs of  Experiment 1)  x 3 (distance
 [@10.1145/3373625.3416999]
 
 ## Introduction
-The goal of this paper is determine how affective Fitts' Law is on subjects with limited fine motor skills.
+The goal of this paper is determine how affective Fitts' Law is on subjects with limited fine motor skills. It does not cover anything about visually impaired peoples or blind people. However, this paper may still be relevant to our research.
 
-
+This paper will explore specifically the test and re-test reliability of Fitts' Law in terms of throughput and model fit. 
 
 ## Study
+__Apparatus:__
+> Microsoft Surface Book 2 laptop measuring 13.1" by 9" set as 3000 x 2000 resolution running the Windows 10 operating system, using 8 GB RAM.
 
+__Test Procedure:__
+> "Each participant took part in two sessions, which were at least four and at most 48 hours apart. In each session,participants performed 10 target acquisitions for 5 target widths (W : 8, 16, 32, 64, 128 px) × 3 target distances (A: 256, 384, 512 px), for a total of 15 A×W conditions and 10×15 = 150 target acquisitions. Each acquisition was a single attempt to click a 1-D vertical“ribbon target” (Figure 1). The target sizes and distances were decided based on typical icon sizes and the distances between the elements present in conventional user interfaces such as Web pages. To account for learning efects, the order of the conditions was randomized across sessions and participants, as is standard practice in Fitts’s law studies. Participants were instructed to perform the tasks as quickly as possible while conforming to an error rate between 4-8%, equating to a total of 6-12 target misses per session. Participants were given the choice to practice the tasks before the start of the session. However, none of the participants chose that option and found the instructions sufcient. Additionally, participants were encouraged to take breaks in between the A×W conditions but not during the trials."
 
+Participants were tested over 15 Distance×Width conditions in each of the two sessions, resulting in a total of 10×15×2 = 300 trials per participant.
+With 50 participants, a total of 50×300 = 15, 000 trials were produced and analyzed in this study.
 
 ## Conclusion
+Results suggest that Fitts’s law provides low test-retest reliability. Importantly, the test-retest reliability of Fitts’s throughput metric was 4.7% lower for people with limited fine motor function.
 
-
-
+> "Additionally, we found that the model ftness of Fitts’s law as measured by Pearson correlation coefcient, r, was .89 (SD=0.08) for people without limited fine motor function, and .81 (SD=0.09) for people with limited fine motor function. Taken together, these results indicate that Fitts’s law should be used with caution and, if possible, over multiple sessions, especially when used in assistive technology evaluations"
 
 ## Lessons Learned
 
-1. 
+1. Reliablity of re-testing Fitts' Law is sketchy especially when evaluating with impaired users.
+2. When testing for accessibility reasons, multiple testing sessions should be utilized.
 
 
 ## Questions
-> 1. 
+> 1. Will this apply to blind participants?
+> 2. Can we make assumptions relating to blind participants?
 
 
 
