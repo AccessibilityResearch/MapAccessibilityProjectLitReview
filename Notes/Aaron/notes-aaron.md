@@ -520,21 +520,78 @@ Results suggest that Fitts’s law provides low test-retest reliability. Importa
 > 1. Will this apply to blind participants?
 > 2. Can we make assumptions relating to blind participants?
 
+\newpage
 
 
+# Bullseye! When Fitts’ Law Doesn’t Fit:
+## Citation
+
+[@10.1145/274644.274681]
+
+## Introduction
+This paper looks to discover the effectivness of a bullseye menu by evaluating with Fitts' Law and a study. 
+
+The papers introduction specifies they are trying to find the selection time and not the search time.
+
+## Study
+> "The experiment consisted of four one-hour sessions. The sessions were on four consecutive days -we wanted subjects to have one night’s sleep in between sessions to alleviate fatigue effects and at the same time to ensure that any learning that had taken place during that day’s session would not be forgotten."
+
+For each trial, a bIack compass was displayed at the center of the screen (Figure 4), with the north, south, east and west arms marked “N”, “S”, “E” and “w" respectively. The centre of the compass contained a letter (either N, S, E, W) and a number (1 to 7) indicating the direction and ring index of the target selection.
+
+Each trial set consisted of 32 trials. It began with 4 practice trials, where the user was instructed to move in one of four directions for 4 signals. These practice trials were not included in the data analysis.
+
+## Conclusion
+It should be noted that the results from the regression analysis of theFitts’ Law case are quite good: in both the auditory and tactile cases the ? value of these analyses are higher than 0.9. Wnhout consideration of the linear model it would be quite understandable to assume that Fitts’ Law is the best predictor model for the task at hand. An important implication of our work is that Fitts’ Law should not be the only performance model tested for new user interface tasks. Even if it fits the task quite well, there may be a better choice.
+
+## Lessons Learned
+
+1. Fitts' Law should be double checked with possibly another algorithm or even replaced with a better fitting model.
+2. the Law should be followed carefully when exploring new UI.
+
+## Questions
+> 1. 
+
+\newpage
 
 
+# Using an Audio Interface to Assist Users Who Are Visually Impaired with Steering Tasks:
+## Citation
+
+[@10.1145/1168987.1169008]
+
+## Introduction
+The goal of this paper is to explore and design tools that assist users with visual impairments to understand relational data through graphs(mathematical term, edges and vertices).
+
+Using audio feedback only (single modal), the users will be able to traverse a graph and obtain spoken word data from the graph as well as varying audio pitches to determine how far along an edge they are and if they have navigated off of the edge.
+
+Figure 3 in the paper provides an example graph of European cities in relation to each other. For users to traverse the graph they use a stylus and navigate based off the audio feedback listed above. When they reach a vertice there will be a robotic voice much like Apples Siri that will tell them the information attached to that node. The users will also recieve audio feedback in varying frequencies related to how close they are to the next vertice. This audio will cut out when the user leaves the edge. 
+
+The latter statements are what led to many participants using a "tacking" technique in which the users would slide the stylus back and forth along the line to get a better idea of the slope of the line.
+
+## Study
+The beginning tests where broken into four stages in which the graphs would get increasingly complex. For example:
+> First test - Single vertex/edge
+> Last  test - Complex graph showing European cites
+
+They note that the participants generally enjoyed using the system and where all able to learn the interface.
+
+Next from these first tests they concluded that the largest problem was context. Each participant had trouble when asked to find a specific vertice because they would have to randomly search the entire graph in order to find it (there was no relational data). However, the same was not the case for geographic graphs assuming the user had some experience of the area. For example in the European cities graph if a user found London then they would know where to generally look to find Kiev. So in closing, if the user had some time to study the graph/geographic area they would be able to locate specific vertices in a relatively short amount of time.
+
+## Conclusion
+> "To our surprise, we also found that edge angle and edge direction were not statistically significant factors in performance between subjects."
+
+In conclusion they found no preferance in differing angles or positions. The next idea they conclude is that this software/tool may be better suited for graphs with geographic data rather than graphs with purely abstract data.
+
+## Lessons Learned
+
+1. Relational graphs involving geographic data can be effective.
+2. Graphs should contain relational data rather than abstract information.
 
 
-
-
-
-
-
-
-
-
-
+## Questions
+> 1. How much more training if possible would make this technique second nature?
+> 2. How much time would users need to study a graph for this to be an effective solution?
+> 3. If the user doesn't want to use "tacking" is there an ideal edge width or vertice size?
 
 \newpage
 
