@@ -1,3 +1,11 @@
+---
+title: 'Survey Question Ideas'
+output: pdf_document
+bibliography: main.bib
+nocite: |
+    @goldberg, @internet-accessibility-for-the-visually-impaired-survey, @doi:10.1177/0034355220957107
+---
+
 # Survey Question Ideas:
 
 ## Background Question Ideas:
@@ -60,29 +68,3 @@
 1.
 
 # References
-
-@misc{survey of visually impaired people and mobility | american council of the blind, title={Survey of visually impaired people and Mobility}, url={https://www.acb.org/content/survey-visually-impaired-people-and-mobility}, journal={Survey of Visually Impaired People and Mobility | American Council of the Blind}}
-
-@misc{internet accessibility for the visually impaired survey, title={Internet accessibility for the visually impaired}, url={https://www.surveymonkey.com/r/VIwebAccessibility}, journal={Internet Accessibility for the Visually Impaired Survey}}
-
-@article{doi:10.1177/0034355220957107,
-author = {Mercedes A. Zapata},
-title ={Disability Affirmation Predicts Employment Among Adults With Visual Impairment and Blindness},
-journal = {Rehabilitation Counseling Bulletin},
-volume = {65},
-number = {2},
-pages = {120-128},
-year = {2022},
-doi = {10.1177/0034355220957107},
-
-URL = {
-https://doi.org/10.1177/0034355220957107
-
-},
-eprint = {
-https://doi.org/10.1177/0034355220957107
-
-}
-,
-abstract = { Empirical research on psychosocial correlates of employment among adults with visual impairment or blindness (VI) is limited, and previous studies involving psychological constructs have reported generally nonsignificant or mixed findings. Considering persistent disparities in employment outcomes faced by people with VI, further investigation is needed to understand the role of psychosocial factors in employment in this population. In the current study, stepwise logistic regression was used to explore the association between personal disability identity (i.e., disability affirmation and disability acceptance) and employment status in a sample of 180 working-age U.S. residents. Results indicated that employment status was predicted by higher disability affirmation (p = .001, odds ratio [OR] = 2.21) in a model that included demographic and impairment-related variables that have previously been examined in employment among adults with VI. The exploratory model predicting employment also included higher educational attainment (p < .001, OR = 6.03), self-reported visibility of disability (p = .006, OR = 4.22), age (p < .001, OR = 0.94), and use of mobility tool (p < .001, OR = 0.05). The regression model yielded a pseudo R2 value of .32, indicating good fit. Important among these findings, the current study introduces disability affirmation, which involves disability pride and positive self-concept as a person with a disability, as a predictor of employment among working-age U.S. residents. Rehabilitation counselors may benefit from a consideration of the role of disability affirmation in consumer employment outcomes. }
-}
