@@ -1,0 +1,171 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+
+
+\title{Map Accessibility Project (MAP) Literature Review}
+\author{Aaron Cherney, Christian Stewart, and Karter Prehn}
+
+\begin{document}
+\maketitle
+
+\keywords{Maps, Multi-Modal, Tactile, Audio, Feedback, Visual-Impairment Evaluations, Navigation, Information Gathering, Information Handling}
+
+\section{Introduction}
+
+\par We wanted to explore two areas of interest, maps as tools of information and maps as tools of navigation for the Blind and visually impaired. Through this exploration, our team would be able to decide a direction towards one of those two overarching topics, understanding some of the tools, methods, and design principles that have already been implemented in the pursuit of accessibility and making information available for the Blind and visually impaired. These will influence the creation of our own guidelines for the future development of making maps accessible in a meaningful and effective ways for the Blind and visually impaired, in the context of information retrieval or navigation related to maps.
+\newline
+\par This paper is intended to be a review of available literature, summarizing important findings related to each piece of literature by team members. It is intended to act as a working document, designed for quick-reference and guidance, but not a substitution for deeper-reference and reading of the original literature. It should also be noted that this literature review likely does not include every important finding that may be relevant from each literature paper reviewed, and due to time constraints, there are many pieces of literature that have not been reviewed. 
+\newline
+\par It is important to review available literature on existing implementations of tools and suggested guidelines to understand what has been done, and to develop a knowledge base of the subject material, particularly useful in our team’s case to encourage higher level discussion between team members, subject matter expert, and our client. It was through our review that we decided to pursue the category of information as a tool in aiding access of maps for the Blind and visually impaired, with the possibility of exploring implementing an optional layer into Google Maps which can orientate itself at all times in the direction of the user, while presenting relevant information through possible uses of audio and haptic feedback.  
+
+Our literature review taught several important lessons. These lessons fall into three distinct categories: navigation, information-gathering, and modality. Each of these categories will be discussed/reviewed below. 
+
+\section{Literature Discussion/Overview}
+
+\subsection{What problems occur when accessing information from a map}
+
+
+\subsection{What solutions have been explored}
+Many different solutions have been explored, Most of these solutions have been under the context of navigation and of these not many have made it past the end user testing, despite showing promising results. An example of this is a paper : \cite{} describing a waypoint system was shown to be very promising and made use of audio and tactile feedback. 
+
+
+%This section to explain why we are doing a survey now as opposed to a low fidelity proto-type.
+\subsection{How does this work and literature justify our proposed solution}
+
+\section{Lessons Learned From Literature}
+
+
+%FIX THE FORMATTING OF THESE SECTIONS. these sections are nesting for some reason.
+\subsection{Aaron's Lessons}
+\cite{} \textbf{Visual Impairments and Mobile Touchscreen Interaction: State-Of-The-Art, Causes of Visual Impairment, and Design Guidelines} \cite{}
+\begin{enumerate}
+    \item Allow configurable visual settings. (Studies show people with visual impairments will spend a lot of time configuring settings) 
+    \item Design for commercially available wearable devices. 
+    \item Design mobile device interactions to reduce encumbrance when using other accessibility devices.
+    \item Detect and deal appropriately with unintended touch. (Possibly a toggle switch for touch) 
+    \item Design usable touch gestures for people with visual impairments. (favor landmarks of the device)
+    \item Deliver appropriate feedback for all visual abilities. Meaning: accommodate for a variety of different visual impairments.
+    \item Deliver appropriate feedback during and after gesture articulation.
+\end{enumerate}
+
+\cite{} \textbf{Facilitating Route Learning Using Interactive Audio-Tactile Maps for Blind and Visually Impaired People } \cite{}
+
+\begin{enumerate}
+    \item Ambient sound should not be overlooked. i.e. environmental sound.
+    \item Intersections are especially important as well as traffic. 
+    \item Landmarks should be immovable and permanent. 
+\end{enumerate}
+
+\cite{} \textbf{Investigating Accessibility on Web-based Maps } \cite{}
+
+\begin{enumerate}
+    \item Google Maps has many accessibilities that need to be met. 
+    \item Expert COMS opinions typically correlate to how the end user performs. 
+    \item Tool based eval is not the best way but provides a decent evaluation for more broad accessibility criteria. 
+\end{enumerate}
+
+\cite{} \textbf{CapMaps - Capacitive Sensing 3D Printed Audio-Tactile Maps } \cite{}
+
+\begin{enumerate}
+    \item 3D printed audio-tactile maps are feasible but have limited capabilities. 
+    \item 3D printing a map that combines PLA and conductive material is time consuming yet effective for areas that aren't subject to change. 
+\end{enumerate}
+
+\cite{} \textbf{Accessible smartphones for blind users: A case study for a wayfinding system } \cite{}
+
+\begin{enumerate}
+    \item Constant feedback is preferred.
+    \item A comment system may be effective?
+    \item Fixed regions for application design are preferred. 
+    \item Multi-model strikes again. (Very effective and preferred) 
+\end{enumerate}
+
+\cite{} \textbf{Usability Evaluation of a Web System for Spatially Oriented Audio Descriptions of Images Addressed to Visually Impaired People } \cite{}
+
+\begin{enumerate}
+    \item A user's Screen reader experience matters when developing a test environment.
+\end{enumerate}
+
+\cite{} \textbf{Evaluating Fitts’ law on vibrating touchscreen to improve visual data accessibility for blind users } \cite{}
+
+\begin{enumerate}
+    \item Fitts' Law can be applied to touchscreens with blind users when the distance and target size are being considered but not when angle is being considered. 
+    \item a single medium of feedback is still effective in this context. (Varying distance and size).
+\end{enumerate}
+
+\cite{} \textbf{The Reliability of Fitts’s Law as a Movement Model for People with and without Limited Fine Motor Function } \cite{}
+
+\begin{enumerate}
+    \item Reliability of re-testing Fitts' Law is limited especially when evaluating with impaired users. 
+    \item When testing for accessibility reasons, multiple testing sessions should be utilized. 
+\end{enumerate}
+
+\cite{} \textbf{Using an Audio Interface to Assist Users Who Are Visually Impaired with Steering Tasks } \cite{}
+
+\begin{enumerate}
+    \item Relational graphs involving geographic data can be effective. 
+    \item Graphs should contain relational data rather than abstract information. 
+\end{enumerate}
+
+
+
+%TODO: Enter Christians lessons in.
+\subsection{Christian's Lessons}
+
+
+
+
+%TODO: Enter karters lessons in and format.
+\subsection{Karter's Lessons}
+Evaluation of Virtual Tactile Dots on Touchscreens in Map Reading: Perception of Distance and Direction 
+
+Modern smartphones do not contain enough vibrating motors, correctly placed, to effectively facilitate location finding of virtual tactile dots. 
+
+Refreshable tactile displays are useful for understanding dynamic map information; but are commonly unobtainable due to size, weight, and price. 
+
+While navigation by vibrotactile feedback is possible and can be accurate, the time to do so can be too long. As such, the overarching concern is practicability. 
+
+Evolution of the Information-Retrieval System for Blind and Visually Impaired People 
+
+Karter didn’t write any lessons learned 
+
+Examination of the Level of Inclusion of Blind Subjects in the Development of Touchscreen Accessibility Technologies 
+
+The inclusion of Blind/visually impaired participants is very important to ensuring that what is being developed is useful to the group it's being developed for. 
+
+The development of software/hardware should have referenced research to support its development. 
+
+Feasibility of Using Haptic Directions through Maps with a Tablet and Smart Watch for People who are Blind and Visually Impaired 
+
+Karter didn’t write any lessons learned 
+
+The Sound and Feel of Titrations: A Smartphone Aid for Color-Blind and Visually Impaired Students 
+
+mobile phones offer a low cost means of software accessibility for the visually impaired  
+
+Vibration and audio feedback can be useful for relaying information to the visually impaired. 
+
+
+\bibliographystyle{alpha}
+\bibliography{main.bib}
+
+\end{document}
