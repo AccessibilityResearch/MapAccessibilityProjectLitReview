@@ -10,6 +10,7 @@ bibliography: aaron.bib
 
 \newpage
 
+
 # Visual Impairments and Mobile Touchscreen Interaction: State-Of-The-Art, Causes of Visual Impairment, and Design Guidelines
 
 ## Citation
@@ -51,9 +52,8 @@ The guideline summation is as stated:
 
 ## Lessons Learned
 
-
-
 \newpage
+
 
 # Facilitating Route Learning Using Interactive Audio-Tactile Maps for Blind and Visually Impaired People
 ## Citation
@@ -96,6 +96,7 @@ From their results stated in the paper:
 ## Questions
 
 \newpage
+
 
 # Investigating Accessibility on Web-based Maps:
 ## Citation
@@ -225,10 +226,8 @@ In conclusion this paper focused mostly on attaching audio descriptions to tacti
 
 ## Questions
 Is there a way to automate designing the 3D maps with CAD (designing the maps seemed like the most time consuming part)?
-\newpage
 
 \newpage
-
 
 
 # Accessible smartphones for blind users: A case study for a wayfinding system:
@@ -292,7 +291,6 @@ it is usable and accessible for visually impaired people__
 > 1. Is this app still availible today?
 > 2. How scalable is the GUI using device landmarks?
 > 3. Which type of constant feedback is preffered(audio or tactile)?
-
 
 \newpage
 
@@ -384,10 +382,7 @@ This meant it took 11.5 minutes on average per task.
 ## Questions
 > 1. Can the use of AI speed up or improve this design?
 
-
-
 \newpage
-
 
 
 # Evaluating Fitts’ law on vibrating touch-screen to improve visual data accessibility for blind users:
@@ -487,7 +482,6 @@ All  in all,  each  tester  performed: 4  (runs of  Experiment 1)  x 3 (distance
 > 2. Will the use of multi-modal feedback be able to be evaluated by Fitts' Law and if so, will it improve the MT and decrease error rate?
 > 3. Will using a plethera of vibration motors in the device improve performance?
 
-
 \newpage
 
 
@@ -497,42 +491,107 @@ All  in all,  each  tester  performed: 4  (runs of  Experiment 1)  x 3 (distance
 [@10.1145/3373625.3416999]
 
 ## Introduction
-The goal of this paper is determine how affective Fitts' Law is on subjects with limited fine motor skills.
+The goal of this paper is determine how affective Fitts' Law is on subjects with limited fine motor skills. It does not cover anything about visually impaired peoples or blind people. However, this paper may still be relevant to our research.
 
-
+This paper will explore specifically the test and re-test reliability of Fitts' Law in terms of throughput and model fit. 
 
 ## Study
+__Apparatus:__
+> Microsoft Surface Book 2 laptop measuring 13.1" by 9" set as 3000 x 2000 resolution running the Windows 10 operating system, using 8 GB RAM.
 
+__Test Procedure:__
+> "Each participant took part in two sessions, which were at least four and at most 48 hours apart. In each session,participants performed 10 target acquisitions for 5 target widths (W : 8, 16, 32, 64, 128 px) × 3 target distances (A: 256, 384, 512 px), for a total of 15 A×W conditions and 10×15 = 150 target acquisitions. Each acquisition was a single attempt to click a 1-D vertical“ribbon target” (Figure 1). The target sizes and distances were decided based on typical icon sizes and the distances between the elements present in conventional user interfaces such as Web pages. To account for learning efects, the order of the conditions was randomized across sessions and participants, as is standard practice in Fitts’s law studies. Participants were instructed to perform the tasks as quickly as possible while conforming to an error rate between 4-8%, equating to a total of 6-12 target misses per session. Participants were given the choice to practice the tasks before the start of the session. However, none of the participants chose that option and found the instructions sufcient. Additionally, participants were encouraged to take breaks in between the A×W conditions but not during the trials."
 
+Participants were tested over 15 Distance×Width conditions in each of the two sessions, resulting in a total of 10×15×2 = 300 trials per participant.
+With 50 participants, a total of 50×300 = 15, 000 trials were produced and analyzed in this study.
 
 ## Conclusion
+Results suggest that Fitts’s law provides low test-retest reliability. Importantly, the test-retest reliability of Fitts’s throughput metric was 4.7% lower for people with limited fine motor function.
 
-
-
+> "Additionally, we found that the model ftness of Fitts’s law as measured by Pearson correlation coefcient, r, was .89 (SD=0.08) for people without limited fine motor function, and .81 (SD=0.09) for people with limited fine motor function. Taken together, these results indicate that Fitts’s law should be used with caution and, if possible, over multiple sessions, especially when used in assistive technology evaluations"
 
 ## Lessons Learned
 
-1. 
+1. Reliablity of re-testing Fitts' Law is sketchy especially when evaluating with impaired users.
+2. When testing for accessibility reasons, multiple testing sessions should be utilized.
 
+
+## Questions
+> 1. Will this apply to blind participants?
+> 2. Can we make assumptions relating to blind participants?
+
+\newpage
+
+
+# Bullseye! When Fitts’ Law Doesn’t Fit:
+## Citation
+
+[@10.1145/274644.274681]
+
+## Introduction
+This paper looks to discover the effectivness of a bullseye menu by evaluating with Fitts' Law and a study. 
+
+The papers introduction specifies they are trying to find the selection time and not the search time.
+
+## Study
+> "The experiment consisted of four one-hour sessions. The sessions were on four consecutive days -we wanted subjects to have one night’s sleep in between sessions to alleviate fatigue effects and at the same time to ensure that any learning that had taken place during that day’s session would not be forgotten."
+
+For each trial, a bIack compass was displayed at the center of the screen (Figure 4), with the north, south, east and west arms marked “N”, “S”, “E” and “w" respectively. The centre of the compass contained a letter (either N, S, E, W) and a number (1 to 7) indicating the direction and ring index of the target selection.
+
+Each trial set consisted of 32 trials. It began with 4 practice trials, where the user was instructed to move in one of four directions for 4 signals. These practice trials were not included in the data analysis.
+
+## Conclusion
+It should be noted that the results from the regression analysis of theFitts’ Law case are quite good: in both the auditory and tactile cases the ? value of these analyses are higher than 0.9. Wnhout consideration of the linear model it would be quite understandable to assume that Fitts’ Law is the best predictor model for the task at hand. An important implication of our work is that Fitts’ Law should not be the only performance model tested for new user interface tasks. Even if it fits the task quite well, there may be a better choice.
+
+## Lessons Learned
+
+1. Fitts' Law should be double checked with possibly another algorithm or even replaced with a better fitting model.
+2. the Law should be followed carefully when exploring new UI.
 
 ## Questions
 > 1. 
 
+\newpage
 
 
+# Using an Audio Interface to Assist Users Who Are Visually Impaired with Steering Tasks:
+## Citation
+
+[@10.1145/1168987.1169008]
+
+## Introduction
+The goal of this paper is to explore and design tools that assist users with visual impairments to understand relational data through graphs(mathematical term, edges and vertices).
+
+Using audio feedback only (single modal), the users will be able to traverse a graph and obtain spoken word data from the graph as well as varying audio pitches to determine how far along an edge they are and if they have navigated off of the edge.
+
+Figure 3 in the paper provides an example graph of European cities in relation to each other. For users to traverse the graph they use a stylus and navigate based off the audio feedback listed above. When they reach a vertice there will be a robotic voice much like Apples Siri that will tell them the information attached to that node. The users will also recieve audio feedback in varying frequencies related to how close they are to the next vertice. This audio will cut out when the user leaves the edge. 
+
+The latter statements are what led to many participants using a "tacking" technique in which the users would slide the stylus back and forth along the line to get a better idea of the slope of the line.
+
+## Study
+The beginning tests where broken into four stages in which the graphs would get increasingly complex. For example:
+> First test - Single vertex/edge
+> Last  test - Complex graph showing European cites
+
+They note that the participants generally enjoyed using the system and where all able to learn the interface.
+
+Next from these first tests they concluded that the largest problem was context. Each participant had trouble when asked to find a specific vertice because they would have to randomly search the entire graph in order to find it (there was no relational data). However, the same was not the case for geographic graphs assuming the user had some experience of the area. For example in the European cities graph if a user found London then they would know where to generally look to find Kiev. So in closing, if the user had some time to study the graph/geographic area they would be able to locate specific vertices in a relatively short amount of time.
+
+## Conclusion
+> "To our surprise, we also found that edge angle and edge direction were not statistically significant factors in performance between subjects."
+
+In conclusion they found no preferance in differing angles or positions. The next idea they conclude is that this software/tool may be better suited for graphs with geographic data rather than graphs with purely abstract data.
+
+## Lessons Learned
+
+1. Relational graphs involving geographic data can be effective.
+2. Graphs should contain relational data rather than abstract information.
 
 
-
-
-
-
-
-
-
-
-
-
-
+## Questions
+> 1. How much more training if possible would make this technique second nature?
+> 2. How much time would users need to study a graph for this to be an effective solution?
+> 3. If the user doesn't want to use "tacking" is there an ideal edge width or vertice size?
 
 \newpage
 
