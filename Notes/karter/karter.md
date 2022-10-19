@@ -34,7 +34,7 @@ The paper cites that researchers have proposed the use of vibrotactile and speec
 
 The paper cites topics in the introductory such as tactile perception of distance, direction, and length in the field of education for the blind, man-machine interfacing, and tactile perception for robots and in virtual reality.
 
-Against this background, the paper explores if vibrotactile and audio feedback can give the accurate perception of distance and direction that is required in map reading. Their accuracy and time performance was compared with those for â€œrealâ€ tactile dots made on capsule paper. On the basis of these experimental results, the paper discusses the effectiveness of the vibrating and reading map app in assisting blind users.
+Against this background, the paper explores if vibrotactile and audio feedback can give the accurate perception of distance and direction that is required in map reading. Their accuracy and time performance was compared with those for real tactile dots made on capsule paper. On the basis of these experimental results, the paper discusses the effectiveness of the vibrating and reading map app in assisting blind users.
 
 ## Study
 
@@ -127,7 +127,7 @@ Initially, this paper was to be an exploration of the current research and exist
 
 ## Citation
 
-[@10.1145/2935334.2935367]
+[@grussenmeyer2016feasibility]
 
 ## Introduction
 
