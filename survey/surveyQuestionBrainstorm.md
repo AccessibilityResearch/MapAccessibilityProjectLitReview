@@ -68,6 +68,13 @@ nocite: |
    c. Understanding the layout of a building
    d. Determining your current location
 1. Once you have plotted a course, how do you follow it?
+1. If not, what changes would you like to see made to make them more accessible?
+1. What do you think about the use of audio cues in lieu of visual cues on a map? (scale of 1-5 maybe?)
+1. What do you think about the use of vibration in lieu of visual cues on a map? (scale of 1-5 maybe?)
+1. What do you think about the use of tactile cues in lieu of visual cues on a map? (scale of 1-5 maybe?)
+1. Have you ever used a map designed for blind individuals? If so, what did you think of it?
+1. Do you use any specialized hardware or software to help you locate places on a map? If yes, please describe the hardware/software and how it helps you.
+1. How do you usually find your way around an unfamiliar place?
 
 ## Questions For Potential Project Direction?
 
