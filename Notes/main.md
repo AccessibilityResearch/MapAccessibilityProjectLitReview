@@ -1,5 +1,5 @@
 ---
-title: "Christian's Research Review"
+title: 'MAP Literature Review'
 output: pdf_document
 bibliography: main.bib
 ---
