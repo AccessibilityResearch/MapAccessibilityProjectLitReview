@@ -4,13 +4,6 @@ output: pdf_document
 bibliography: christian.bib
 ---
 
-cake's law
-
-**c**hristian
-**a**aron
-**k**arter
-**e**valuation
-
 # Table of Contents {ignore=true}
 
 [TOC]
@@ -30,6 +23,16 @@ cake's law
 ## Conclusion
 
 ## Lessons Learned
+
+Braille maps can be useful, but have several problems:
+
+1. Are often costly
+1. May not have enough detail
+1. Might not be up-to-date
+
+The authors built SpaceSense, which uses vibrotactile feedback to provide users informationabout distance and direction towards a particular destination.
+
+The study shows a positive correlation between the usage of SpaceSense and the ability for participants to maintain spatial relationships between places.
 
 ## Further Questions
 
@@ -55,7 +58,9 @@ cake's law
 
 ## Lessons Learned
 
--   Timbremap
+The authors created Timbremap, a tool that uses a sonification interface to allow touch-screen mobile devices to provide audio feedback about indoor layouts and geometry.
+
+Their users reported that the tool was effective in conveying, "non-trivial geometry" and helped visually-impaired users to explore indoor layouts.
 
 ## Further Questions
 
@@ -128,6 +133,10 @@ The authors found a significant difference in understanding and required explora
 
 ## Lessons Learned
 
+The authors tested using virtual reality as a way of providing spatial knowledge to blind individuals.
+
+Their results provided evidence that using VR as a means of exploration can decrease the required "discovery time", although is largely dependant on the effectiveness of wall-detection.
+
 ## Further Questions
 
 1. What were the feedback forms used?
@@ -187,6 +196,12 @@ The authors came to several conclusions:
 1. Studies should get BLV individuals involved early in the process, as their feedback is very important when making design decisions
 
 ## Lessons Learned
+
+The authors studied 33 papers in an attempt to provide a better understanding of existing approaches to image accessibility.
+
+They found that there is little existing information about automating accessibility options for images.
+
+The authors concluded that not enough research has been done on the topic.
 
 ## Further Questions
 
