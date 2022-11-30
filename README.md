@@ -44,8 +44,16 @@ This will install a Docker image on your computer that contains all the required
 
 Then, whenever you need to compile, run:
 
+**Mac or Linux:**
+
 ```bash
 make
+```
+
+**Windows Powershell:**
+
+```bash
+make windows
 ```
 
 Your new main.pdf file will be saved to the literature-review directory.
@@ -67,16 +75,18 @@ This will install a Docker image on your computer that contains all the required
 
 Then, whenever you need to compile, run:
 
-**Mac or Linux**:
+**Mac or Linux:**
 
 ```bash
 docker run -v $(PWD):/app lit make docker
 ```
 
-**Windows** (don't forget to replace "C:\PATH\TO\literature-review" with the path to the literature-review directory):
+**Windows Powershell:**
 
 ```bash
-docker run -v C:\PATH\TO\literature-review:/app lit make docker
+docker run -v ${PWD}:/app lit make docker
 ```
+
+Run the same command, but replace `$(PWD)` with the path to the literature review directory.
 
 Your new main.pdf file will be saved to the literature-review directory.
