@@ -85,6 +85,4 @@ docker run -v $(PWD):/app lit make docker
 docker run -v ${PWD}:/app lit make docker
 ```
 
-Run the same command, but replace `$(PWD)` with the path to the literature review directory.
-
 Your new main.pdf file will be saved to the literature-review directory.
