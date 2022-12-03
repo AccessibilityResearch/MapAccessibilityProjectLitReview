@@ -4,9 +4,41 @@
 
 MAP, short for Map Accessibility Project, is a research project designed to help blind individuals access information on a map.
 
-INSERT MORE INFORMATION ABOUT THE PROJECT AND TEAM MEMBERS HERE
+The project is led by Minnesota State University of Mankato (MNSU) Professor Dr. Guarionex Salivia.
 
-## Setup
+This repo contains the literature review written by a team of students as part of their Fall 2022 Undergraduate Computer Science Project. The group contained J2 Student Lead Karter Prehn, as well as J1's Christian Stewart and Aaron Cherney. MNSU Alumni and legally blind individual Flint Million was consulted regularly for feedback and suggestions.
+
+The literature review was used to create a survey for blind individuals The survey is pending IRB approval.
+
+Future teams will analyze the results of the survey and use the results to help develop map accessibility guidelines and solutions for the visually impaired.
+
+## Contents
+
+### main.pdf
+
+main.pdf is the compiled Literature Review written by Undergraduate Students Karter Prehn, Aaron Cherney, and Christian Stewart. It contains information about valuable takeaways from the studies and articles the students reviewed during the Fall 2022 semester.
+
+### main.tex
+
+A raw LaTeX version of the Literature Review.
+
+### main.bib
+
+BibTeX citations of all of the sources used in the Literature Review. Adding to this adds to the citations that can be referenced and compiled in main.tex.
+
+### sources
+
+Contains PDF versions of all the studies and articles referenced in the Literature Review.
+
+### Dockerfile and Makefile
+
+These files are used for LaTeX compilation. It compiles main.tex and main.bib into main.pdf, which is currently the literature review, but it can be customized to compile whatever LaTeX document you want, either by replacing main.tex and main.bib with your own versions, or changing Dockerfile and Makefile to reference different .tex and .bib files. (Extensive instructions are outside the scope of this README)
+
+### .vscode
+
+This directory contains the recommended VSCode extensions to use with this project.
+
+## Repo Setup
 
 ### Required
 
@@ -32,7 +64,7 @@ Git usually asks you to setup a **GitHub** account, but in case you don't have o
 
 If you have both [Docker](https://www.docker.com) and [GNU make](https://www.gnu.org/software/make/manual/make.html) installed:
 
-Within the literature-review directory, run:
+In your terminal, `cd` into the literature-review directory and run:
 
 ```bash
 make build
@@ -60,7 +92,7 @@ Your new main.pdf file will be saved to the literature-review directory.
 
 If you have [Docker](https://www.docker.com) but **don't** have GNU make:
 
-Within the literature-review directory, run:
+In your terminal, `cd` into the literature-review directory and run:
 
 ```bash
 docker build -t lit .
@@ -86,3 +118,5 @@ docker run -v ${PWD}:/app lit make docker
 ```
 
 Your new main.pdf file will be saved to the literature-review directory.
+
+**Note: Running this will add a bunch of main.\* files. This is normal. They can be removed after compilation if you would like.**
