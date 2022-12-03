@@ -10,6 +10,8 @@ nocite: |
 
 ## Background Question Ideas:
 
+[@goldberg]
+
 1. When did you go blind? BAB or BBB
 1. What is your degree of visual difficulty? Choose one:
     - Totally blind
@@ -18,7 +20,6 @@ nocite: |
     - Low visioned – high visual acuity
     - Bad vision – not legally blind
     - Other:
-1. How much screen reader experience do you have? How often?
 1. How much do you use a mobile device? How often and what for?
 1. What kind of mobile device do you have? Choose all that apply.
     - [ ] Android
@@ -27,6 +28,9 @@ nocite: |
     - [ ] Other:
 1. Have you used applications such as google maps for navigation purposes?
     - If yes, how effective was it and how was the experience? How often?
+
+[@internet-accessibility-for-the-visually-impaired-survey]
+
 1. Have you used any other tool for navigation purposes?
     - If yes, what was it and how was your experience with it?
 1. How recently have you used these tools if answered yes?
@@ -80,6 +84,10 @@ nocite: |
 your comment goes here
 and here
 -->
+
+## Demographic Questions
+
+Built into qualtrics
 
 ## Questions For Potential Project Direction?
 
