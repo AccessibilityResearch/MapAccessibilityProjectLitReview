@@ -46,12 +46,12 @@ This discussion is based off of all the literature reviewed, all reviewed docume
 
 %add references to the correct papers - Aaron
 \subsection{What problems occur when accessing information from a map}
-Based off the literature reviewed there are a few standout problems that appear when accessing information from a map. The main problems include the following: Understanding relational data(where you are relative to known locations)\cite{10.1145/2207676.2207734}, perception of angle/trajectory to a given location\cite{}, and obtaining relevant data from the map locations such as a location description\cite{}. Another large problem that was explored in our research was actual application accessibility, many of the largest online map and location services have been tested and shown to be only partially accessible to visually impaired individuals based off WCAG 2.0(Web Content Accessibility Guidelines)\cite{}.
+Based off the literature reviewed there are a few standout problems that appear when accessing information from a map. The main problems include the following: Understanding relational data(where you are relative to known locations)\cite{10.1145/1168987.1169008}, perception of angle/trajectory to a given location\cite{LAHIB201816}, and obtaining relevant data from the map locations such as a location description. Another large problem that was explored in our research was actual application accessibility, many of the largest online map and location services have been tested and shown to be only partially accessible to visually impaired individuals based off WCAG 2.0(Web Content Accessibility Guidelines)\cite{10.1145/2815169.2815171}.
 
 %
 \subsection{What solutions have been explored}
 Many different solutions have been explored, Most of these solutions have been under the context of navigation and of these not many have made it past the end user testing, 
-despite showing promising results. An example of this is a paper : \cite{} describing a waypoint system that was shown to be very promising and made use of audio and tactile feedback. 
+despite showing promising results. An example of this is a paper : \cite{10.1145/2468356.2468364} describing a waypoint system that was shown to be very promising and made use of audio and tactile feedback. 
 
 
 
@@ -63,10 +63,21 @@ Many of the problems explored in the literature may be outdated by now(2022) or 
 
 \section{Lessons Learned From Literature}
 
+Many lessons where learned from the literature review and these lessons fell under a couple different catagories, these catagories are as follows: Guidelines for feedback, guidelines for mobile applications, general guidelines for developing an accessible project, and finally some miscellaneous lessons about some more esoteric solutions. While many lessons where learned and many guidelines where formed in the literature, it is most important to realize that one should still avoid making assumptions whenever possible.
 
-%Instead of just listing all of our data/lessons flint proposed that we basically write a mini paper that sort of flows through all the lessons nicely.
-\subsection{Aaron's Lessons}
-\cite{} \textbf{Visual Impairments and Mobile Touchscreen Interaction: State-Of-The-Art, Causes of Visual Impairment, and Design Guidelines} \cite{}
+\subsection{Guidelines For Feedback}
+
+\par When it comes to feedback such as audio and vibrations we can say that there are some general preferences that should be applied to accessible applications. However, specific applications of feedback forms sometimes show specific preferences, for example some participants in a paper claimed that constant feedback is preferred \cite{RODRIGUEZSANCHEZ20147210} while other papers never made this claim. It is also shown in the same paper that a Multi-Modal feedback system is preferred(combination of audio and vibration). The latter statement about Multi-Modal feedback has been consistent throughout almost every single paper reviewed. We can see that two statements from the same paper have very different levels of importance when reviewed in context, this is why one must avoid making assumptions whenever possible when dealing with accessibility.
+\newline
+\par Some more general lessons can be taken from the paper \cite{doi:10.1080/10447318.2017.1279827} where the authors state that accessible mobile applications should deliver appropriate feedback for all visual abilities, meaning that one should accommodate for a variety of different visual impairments(colorblind, partially blind, ect.). The other lesson taken from this paper is that an application should also deliver appropriate feedback during and after any type of gesture articulation(e.g. using 2 fingers to zoom in on a picture). 
+\newline
+\par Now that we have general guidelines for the feedback forms we explored a paper that studied what kind of physical landmarks blind individuals actually wanted feedback for. From the following paper \cite{10.1145/2468356.2468364} the authors explored and tested a wayfinding application and discovered through end-user testing a couple different key guidelines for landmarks and audio queues/feedback that would be used in the context of guiding a user around a physical space outdoors. Lesson 1, ambient sound should not be overlooked. i.e. enviromental sounds. Lesson 2, intersections are vitally important to navigating as well as traffic. Lesson 3, landmarks should be immovable and permanent. One last thing that was included in this paper was that a public comment system could be explored so that users could share a spaces "quirks" from a visually impaired perspective.
+\newline
+
+
+\subsection{Guidelines For Mobile Applications/Devices}
+
+\par This is a shorter section because only one paper that was reviewed gave solid guidelines for the developement of mobile applications/devices. This paper \cite{doi:10.1080/10447318.2017.1279827} lists the guidelines nicely and is included here simply as a list.
 \begin{enumerate}
     \item Allow configurable visual settings. (Studies show people with visual impairments will spend a lot of time configuring settings) 
     \item Design for commercially available wearable devices. 
@@ -76,105 +87,114 @@ Many of the problems explored in the literature may be outdated by now(2022) or 
     \item Deliver appropriate feedback for all visual abilities. Meaning: accommodate for a variety of different visual impairments.
     \item Deliver appropriate feedback during and after gesture articulation.
 \end{enumerate}
+Another lesson learned about mobile applications is from the paper \cite{RODRIGUEZSANCHEZ20147210} where the authors state that fixed regions of a device such as the devices corners and buttons are preferred when creating and designing a mobile application. Lastly, \cite{bandyopadhyay2017sound} states very simply that mobile phones offer a low cost means of software accessibility for the visually impaired. The latter statement is a great summation of why we where leaning towards developing some sort of mobile application.
 
-\cite{} \textbf{Facilitating Route Learning Using Interactive Audio-Tactile Maps for Blind and Visually Impaired People } \cite{}
 
+
+
+\subsection{General Guidelines For Different Types Of Maps}
+When exploring the subject of maps in particular there where many papers that talked about the ability to use 3D printed maps as a tool for the visually impaired. I think it is important to note here that we did not consider going in this direction because our lessons learned showed it to be less than promising as a solution to our problem. With that being said here is a list of our lessons learned about 3D printed maps.
+\newline
+\cite{10.1007/978-3-319-41267-2_20}
 \begin{enumerate}
-    \item Ambient sound should not be overlooked. i.e. environmental sound.
-    \item Intersections are especially important as well as traffic. 
-    \item Landmarks should be immovable and permanent. 
+    \item 3D printed audio-tactile maps are feasible but have limited capabilities. 
+    \item 3D printing a map that combines PLA and conductive material is time consuming yet effective for areas that aren't subject to change. 
+\end{enumerate}
+\cite{10.1145/2207676.2207734}
+Braille maps can be useful, but have several problems:
+\begin{enumerate}
+\item Are often costly.
+\item May not have enough detail.
+\item Might not be up-to-date.
 \end{enumerate}
 
-\cite{} \textbf{Investigating Accessibility on Web-based Maps } \cite{}
+The authors built SpaceSense, which uses vibrotactile feedback to provide users informationabout distance and direction towards a particular destination.
+\newline
+\par The study shows a positive correlation between the usage of SpaceSense and the ability for participants to maintain spatial relationships between places.
+
+
+\cite{10.1145/1851600.1851606}
+\par The authors created Timbremap, a tool that uses a sonification interface to allow touch-screen mobile devices to provide audio feedback about indoor layouts and geometry.
+\newline
+\par Their users reported that the tool was effective in conveying, "non-trivial geometry" and helped visually-impaired users to explore indoor layouts.
+\newline
+
+\cite{10.1145/3186894}
+-   3d printing a map and adding audio feedback is a fantastic way to provide information
+
+
+
+\subsection{Fitts's Law}
+Fitts' law states that the amount of time required for a person to move a pointer (e.g., mouse cursor) to a target area is a function of the distance to the target divided by the size of the target. Thus, the longer the distance and the smaller the target's size, the longer it takes. This is important to making accessible maps and interfaces for visually impaired users because using fitts's law we can extrapolate how difficult it may be to perform an action on a map and we can even put a number on it and possibly rank certain interfaces based off difficulty.
+\newline
+\par However, the big problem with this is that we are then falling into the habit of making "assumptions" based off math. Our team then decided to explore many different papers that address this potential problem with fitts's law.
+\newline
+\par Here is what we learned from the following papers:
+
+\cite{LAHIB201816}
+\begin{enumerate}
+    \item Fitts' Law can be applied to touchscreens with blind users when the distance and target size are being considered but not when angle is being considered. 
+    \item a single medium of feedback is still effective in this context. (Varying distance and size).
+\end{enumerate}
+
+\cite{10.1145/3373625.3416999}
+\begin{enumerate}
+    \item Reliability of re-testing Fitts' Law is limited especially when evaluating with impaired users. 
+    \item When testing for accessibility reasons, multiple testing sessions should be utilized. 
+\end{enumerate}
+
+\subsection{Miscellaneous Valuable Lessons}
+\cite{10.1145/2815169.2815171} \textbf{Investigating Accessibility on Web-based Maps } 
 
 \begin{enumerate}
     \item Google Maps has many accessibilities that need to be met. 
     \item Expert COMS opinions typically correlate to how the end user performs. 
     \item Tool based eval is not the best way but provides a decent evaluation for more broad accessibility criteria. 
 \end{enumerate}
-
-\cite{} \textbf{CapMaps - Capacitive Sensing 3D Printed Audio-Tactile Maps } \cite{}
-
-\begin{enumerate}
-    \item 3D printed audio-tactile maps are feasible but have limited capabilities. 
-    \item 3D printing a map that combines PLA and conductive material is time consuming yet effective for areas that aren't subject to change. 
-\end{enumerate}
-
-\cite{} \textbf{Accessible smartphones for blind users: A case study for a wayfinding system } \cite{}
-
-\begin{enumerate}
-    \item Constant feedback is preferred.
-    \item A comment system may be effective?
-    \item Fixed regions for application design are preferred. 
-    \item Multi-model strikes again. (Very effective and preferred) 
-\end{enumerate}
-
-\cite{} \textbf{Usability Evaluation of a Web System for Spatially Oriented Audio Descriptions of Images Addressed to Visually Impaired People } \cite{}
+\cite{10.1007/978-3-319-07440-5_15} \textbf{Usability Evaluation of a Web System for Spatially Oriented Audio Descriptions of Images Addressed to Visually Impaired People } 
 
 \begin{enumerate}
     \item A user's Screen reader experience matters when developing a test environment.
 \end{enumerate}
 
-\cite{} \textbf{Evaluating Fitts’ law on vibrating touchscreen to improve visual data accessibility for blind users } \cite{}
-
-\begin{enumerate}
-    \item Fitts' Law can be applied to touchscreens with blind users when the distance and target size are being considered but not when angle is being considered. 
-    \item a single medium of feedback is still effective in this context. (Varying distance and size).
-\end{enumerate}
-
-\cite{} \textbf{The Reliability of Fitts’s Law as a Movement Model for People with and without Limited Fine Motor Function } \cite{}
-
-\begin{enumerate}
-    \item Reliability of re-testing Fitts' Law is limited especially when evaluating with impaired users. 
-    \item When testing for accessibility reasons, multiple testing sessions should be utilized. 
-\end{enumerate}
-
-\cite{} \textbf{Using an Audio Interface to Assist Users Who Are Visually Impaired with Steering Tasks } \cite{}
+\cite{10.1145/1168987.1169008} \textbf{Using an Audio Interface to Assist Users Who Are Visually Impaired with Steering Tasks }
 
 \begin{enumerate}
     \item Relational graphs involving geographic data can be effective. 
     \item Graphs should contain relational data rather than abstract information. 
 \end{enumerate}
 
+\cite{electronics10080953}\textbf{Image Accessibility for Screen Reader Users: A Systematic Review and a Road Map }
+
+\begin{enumerate}
+    \item The authors studied 33 papers in an attempt to provide a better understanding of existing approaches to image accessibility.
+    \item They found that there is little existing information about automating accessibility options for images.
+    \item The authors concluded that not enough research has been done on the topic.
+\end{enumerate}
+
+\cite{watanabe2017evaluation}\textbf{Evaluation of Virtual Tactile Dots on Touchscreens in Map Reading: Perception of Distance and Direction }
+
+\begin{enumerate}
+    \item Modern smartphones do not contain enough vibrating motors, correctly placed, to effectively facilitate location finding of virtual tactile dots. 
+
+    \item Refreshable tactile displays are useful for understanding dynamic map information; but are commonly unobtainable due to size, weight, and price. 
+
+    \item While navigation by vibrotactile feedback is possible and can be accurate, the time to do so can be too long. As such, the overarching concern is practicability. 
+
+\end{enumerate}
+
+\cite{thompson2018examination}\textbf{Examination of the Level of Inclusion of Blind Subjects in the Development of Touchscreen Accessibility Technologies }
+
+\begin{enumerate}
+    \item The inclusion of Blind/visually impaired participants is very important to ensuring that what is being developed is useful to the group it's being developed for. 
+
+    \item The development of software/hardware should have referenced research to support its development. 
+
+\end{enumerate}
 
 
-%TODO: Enter Christians lessons in.
-\subsection{Christian's Lessons}
 
-
-
-
-%TODO: Enter karters lessons in and format.
-\subsection{Karter's Lessons}
-Evaluation of Virtual Tactile Dots on Touchscreens in Map Reading: Perception of Distance and Direction 
-
-Modern smartphones do not contain enough vibrating motors, correctly placed, to effectively facilitate location finding of virtual tactile dots. 
-
-Refreshable tactile displays are useful for understanding dynamic map information; but are commonly unobtainable due to size, weight, and price. 
-
-While navigation by vibrotactile feedback is possible and can be accurate, the time to do so can be too long. As such, the overarching concern is practicability. 
-
-Evolution of the Information-Retrieval System for Blind and Visually Impaired People 
-
-Karter didn’t write any lessons learned 
-
-Examination of the Level of Inclusion of Blind Subjects in the Development of Touchscreen Accessibility Technologies 
-
-The inclusion of Blind/visually impaired participants is very important to ensuring that what is being developed is useful to the group it's being developed for. 
-
-The development of software/hardware should have referenced research to support its development. 
-
-Feasibility of Using Haptic Directions through Maps with a Tablet and Smart Watch for People who are Blind and Visually Impaired 
-
-Karter didn’t write any lessons learned 
-
-The Sound and Feel of Titrations: A Smartphone Aid for Color-Blind and Visually Impaired Students 
-
-mobile phones offer a low cost means of software accessibility for the visually impaired  
-
-Vibration and audio feedback can be useful for relaying information to the visually impaired. 
-
-
+\newpage
 \bibliographystyle{alpha}
 \bibliography{main.bib}
 
