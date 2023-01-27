@@ -11,8 +11,6 @@
 % Useful packages
 \usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage{titlesec}
-\usepackage{xcolor}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
 % Keywords command
@@ -77,40 +75,36 @@ While many lessons where learned and many guidelines where formed in the literat
 
 \subsection{Guidelines For Mobile Applications/Devices}
 
-\par This is a shorter section because only one paper that was reviewed gave solid guidelines for the developement of mobile applications and devices. \cite{doi:10.1080/10447318.2017.1279827} lists the guidelines nicely and is included here as a list.
-\begin{enumerate}
-    \item Allow configurable visual settings. (Studies show people with visual impairments will spend a lot of time configuring settings) 
-    \item Design for commercially available wearable devices. 
-    \item Design mobile device interactions to reduce encumbrance when using other accessibility devices.
-    \item Detect and deal appropriately with unintended touch. (Possibly a toggle switch for touch) 
-    \item Design usable touch gestures for people with visual impairments. (favor landmarks of the device)
-    \item Deliver appropriate feedback for all visual abilities. Meaning: accommodate for a variety of different visual impairments.
-    \item Deliver appropriate feedback during and after gesture articulation.
-\end{enumerate}
-Another lesson learned about mobile applications is from \cite{RODRIGUEZSANCHEZ20147210} where the authors state that fixed regions of a device such as the devices corners and buttons are preferred when creating and designing a mobile application. Lastly, \cite{bandyopadhyay2017sound} states very simply that mobile phones offer a low cost means of software accessibility for the visually impaired. The latter statement is a great summation of why we where leaning towards developing some sort of mobile application.
+\par Only paper that was reviewed gave solid guidelines for the development of mobile applications and devices, however, there are still takeaways to be gleaned. \cite{doi:10.1080/10447318.2017.1279827} 
+\newline
+\par Studies show that visually impaired people will take more time to configure visual settings in applications when the options are available. Therefore, having such configurations will find ought of use when the application includes them. 
+\newline
+\par Wearable smart devices have experienced a boom in popularity in recent years, and have potential to provide utility for visually impaired individuals. When creating an application, being mindful of the practicality of such devices can open many opportunities to allow for increased accessibility features.
+\newline
+\par Unintended touches can pose a plethora of issues when not accounted for by the software. Being able to detect unintended touches, or provide protection against such touches will substantially increase usability of an application. Providing feedback when such touches occur, and having features that allow the user to orient themselves with what is on the screen is useful for keeping the user in the area of the device they wish to be using. 
+\newline
+\par Currently, gestures are designed to be intuitive for individuals with vision, not for people that are visually impaired. Creating additional gestures, or allowing for customizable/configurable gestures, that are more suitable for visually impaired people will create an application that is easier to use.
+\newline
+\par Delivering appropriate feedback for all levels of visual ability is imperative for inclusive accessibility. Different gestures, color schemes, vibrations, and sounds may work better for different types of visual impairment. 
+\newline
+\par Ensuring the user of the application knows what their gesture is doing and when it is complete is vital. A user must be able to know that the intended gesture was registered, and that it has done the intended task. Giving varied feedback for different gestures can tell the user which gesture was input. Providing continuous feedback during some gestures can help the user know that their gesture has not ended prematurely.
+\newline
+\par Another lesson learned about mobile applications is from \cite{RODRIGUEZSANCHEZ20147210} where the authors state that fixed regions of a device such as the devices corners and buttons are preferred when creating and designing a mobile application. Lastly, \cite{bandyopadhyay2017sound} states very simply that mobile phones offer a low cost means of software accessibility for the visually impaired. The latter statement is a great summation of why we were leaning towards developing some sort of mobile application.
 
 
-\subsubsection{Gestures in Mobille Applications/Devices}
 
-\par {\color{magenta} New papers to be added in this section. }
 
 \subsection{General Guidelines For Different Types Of Maps}
-When exploring the subject of maps in particular there where many papers that talked about the ability to use 3D printed maps as a tool for the visually impaired. I think it is important to note here that we did not consider going in this direction because our lessons learned showed it to be less than promising as a solution to our problem. With that being said here is a list of our lessons learned about 3D printed maps.
+When exploring the subject of maps in particular there were many papers that talked about the ability to use 3D printed maps as a tool for the visually impaired. I think it is important to note here that we did not consider going in this direction because our lessons learned showed it to be less than promising as a solution to our problem.
 \newline
 \cite{10.1007/978-3-319-41267-2_20}
-\begin{enumerate}
-    \item 3D printed audio-tactile maps are feasible but have limited capabilities. 
-    \item 3D printing a map that combines PLA and conductive material is time consuming yet effective for areas that aren't subject to change. 
-\end{enumerate}
+\newline
+\par 3D printing a map that combines PLA and conductive materials is often not a viable option due to the resource requirements and time consumption. However, for areas that are not subject to change, and are intended for use by many people, it can be a very effective option. For example, an attraction that has a large volume of people going through it, and does not undergo large-scale changes often, such as a museum or mall, would be an ideal environment for such a map. It is a situation where it is not meant for a single individual to use, but will see much use based on the volume of different individuals that pass through such a place. 3D printing a map for individual use, and for each time said individual wishes to take a trip, is not going to be a reasonable feat for many. 
 \cite{10.1145/2207676.2207734}
-Braille maps can be useful, but have several problems:
-\begin{enumerate}
-    \item Are often costly.
-    \item May not have enough detail.
-    \item Might not be up-to-date.
-\end{enumerate}
-
-The authors built SpaceSense, which uses vibrotactile feedback to provide users informationabout distance and direction towards a particular destination.
+\newline
+\par Braille maps can be useful, and still have several problems. Braille maps are often costly due to their specialized production process. Specially trained individuals, as well as equipment, is needed to produce a braille map. Common, often large scale, maps are more widely produced, however, when a smaller, more detailed map is necessary, it almost always must be custom designed and printed. This process is very involved, and is not instant, in the way that modern mobile applications are able to otherwise provide directions. The level of detail in such braille maps may also be insufficient for proper navigation, depending on how it was designed and created. Another limitation to such maps is they cannot be updated, and the user will not have current information when anything in the environment changes. This poses a challenge in terms of difficulty in navigating, as well as a potentially significant safety risk to any user. 
+\newline
+The authors built SpaceSense, which uses vibrotactile feedback to provide users information about distance and direction towards a particular destination.
 \newline
 \par The study shows a positive correlation between the usage of SpaceSense and the ability for participants to maintain spatial relationships between places.
 
@@ -127,72 +121,40 @@ The authors built SpaceSense, which uses vibrotactile feedback to provide users 
 
 
 \subsection{Fitts's Law}
-Fitts' Law states that the amount of time required for a person to move a pointer (e.g., mouse cursor) to a target area is a function of the distance to the target divided by the size of the target. Thus, the longer the distance and the smaller the target's size, the longer it takes. This is important to making accessible maps and interfaces for visually impaired users because using Fitts's Law we can extrapolate how difficult it may be to perform an action on a map and we can even put a number on it and possibly rank certain interfaces based off difficulty.
+Fitts' Law states that the amount of time required for a person to move a pointer (e.g., mouse cursor) to a target area is a function of the distance to the target divided by the size of the target. Therefore, it takes longer the farther away the target is and the smaller it is.This is important to make accessible maps and interfaces for visually impaired users.Using Fitts's Law, we can extrapolate how difficult it may be to perform an action on a map, and we can even put a number on it and possibly rank certain interfaces based on difficulty.
 \newline
-\par However, the big problem with this is that we are then falling into the habit of making "assumptions" based off math. Our team then decided to explore many different papers that address this potential problem with Fitts's Law.
+\par However, the biggest issue with this Law is that we tend to fall into the habit of making "assumptions" based on math. Our team then decided to explore many different papers that address this potential problem with Fitts's Law.
+Here is what we learned from the following papers:
 \newline
-\par Here is what we learned from the following papers:
-
+First, Fitts' Law can be applied to touchscreens with blind users when the distance and target size are being considered, but not when angle is being considered. 
+Then, even a single feedback medium can be useful in this context. (Varying distance and size).
 \cite{LAHIB201816}
-\begin{enumerate}
-    \item Fitts' Law can be applied to touchscreens with blind users when the distance and target size are being considered but not when angle is being considered. 
-    \item a single medium of feedback is still effective in this context. (Varying distance and size).
-\end{enumerate}
-
+\newline
+Next, the reliability of re-testing Fitts' Law is limited especially when evaluating with impaired users.Finally, when testing for accessibility reasons, multiple testing sessions should be utilized. 
 \cite{10.1145/3373625.3416999}
-\begin{enumerate}
-    \item Reliability of re-testing Fitts' Law is limited especially when evaluating with impaired users. 
-    \item When testing for accessibility reasons, multiple testing sessions should be utilized. 
-\end{enumerate}
 
 \subsection{Miscellaneous Valuable Lessons}
 \cite{10.1145/2815169.2815171} \textbf{Investigating Accessibility on Web-based Maps } 
 
-\begin{enumerate}
-    \item Google Maps has many accessibility options that need to be met. 
-    \item Expert COMS opinions typically correlate to how the end user performs. 
-    \item Tool based eval is not the best way but provides a decent evaluation for more broad accessibility criteria. 
-\end{enumerate}
+\par Tool-based evaluation falls short to expert evaluation of Having a web accessibility expert’s opinions generally can correlate to better end user performance. After expert analysis, Google Maps was missing 18 of the 23 accessibility criteria. For instance, Google Maps fails at criteria 1.4.1, as text does not have a luminosity contrast ratio of at least 5:1 compared to its background.
+\newline
+
 \cite{10.1007/978-3-319-07440-5_15} \textbf{Usability Evaluation of a Web System for Spatially Oriented Audio Descriptions of Images Addressed to Visually Impaired People } 
 
-\begin{enumerate}
-    \item A user's screen reader experience matters when developing a test environment.
-\end{enumerate}
+\par Something else worth noting is that the screen reader is an important part of a user’s experience with anything they interact with, especially the testing environment. During the testing process, the participants using a screen reader performed tasks significantly faster than those who did not.
+\newline
 
 \cite{10.1145/1168987.1169008} \textbf{Using an Audio Interface to Assist Users Who Are Visually Impaired with Steering Tasks }
-
-\begin{enumerate}
-    \item Relational graphs involving geographic data can be effective. 
-    \item Graphs should contain relational data rather than abstract information. 
-\end{enumerate}
-
-\cite{electronics10080953}\textbf{Image Accessibility for Screen Reader Users: A Systematic Review and a Road Map }
-
-\begin{enumerate}
-    \item The authors studied 33 papers in an attempt to provide a better understanding of existing approaches to image accessibility.
-    \item They found that there is little existing information about automating accessibility options for images.
-    \item The authors concluded that not enough research has been done on the topic.
-\end{enumerate}
+\par For the presentation of information, on the other hand, graphs that show relational information, as opposed to abstract data, are preferred. When tested side-by-side, graphs with relational information are more effective.
+\newline
 
 \cite{watanabe2017evaluation}\textbf{Evaluation of Virtual Tactile Dots on Touchscreens in Map Reading: Perception of Distance and Direction }
-
-\begin{enumerate}
-    \item Modern smartphones do not contain enough vibrating motors, correctly placed, to effectively facilitate location finding of virtual tactile dots. 
-
-    \item Refreshable tactile displays are useful for understanding dynamic map information; but are commonly unobtainable due to size, weight, and price. 
-
-    \item While navigation by vibrotactile feedback is possible and can be accurate, the time to do so can be too long. As such, the overarching concern is practicability. 
-
-\end{enumerate}
+\par Tactile dot displays can be an effective way to visualize map information for visually impaired and blind people. Despite this, virtual tactile dot displays are often large, impractical, and overpriced for widespread use. A smartphone, for instance, does not have enough vibration motors within it to accurately produce a virtual tactile dot.
+\newline
 
 \cite{thompson2018examination}\textbf{Examination of the Level of Inclusion of Blind Subjects in the Development of Touchscreen Accessibility Technologies }
 
-\begin{enumerate}
-    \item The inclusion of Blind and visually impaired participants is very important to ensuring that what is being developed is useful to the group it's being developed for. 
-
-    \item The development of software/hardware should have referenced research to support its development. 
-
-\end{enumerate}
+\par Finally, it is important in the conception of the project to keep the intended users in mind. A project designed and developed for blind individuals is most effective when blind people are involved in the design and development process.
 
 
 
